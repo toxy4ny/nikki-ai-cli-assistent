@@ -1,0 +1,29 @@
+# see https://github.com/sigoden/aichat/blob/main/config.example.yaml
+
+model: rnj-1:rnj-1:latest
+clients:
+- type: openai-compatible
+  name: rnj-1
+  api_base: http://localhost:11434/v1
+  api_key: ollama
+  models:
+  - name: deepseek-coder:6.7b-base
+  - name: nomic-embed-text:latest
+    type: embedding
+    default_chunk_size: 1000
+    max_batch_size: 100
+  - name: rnj-1:latest
+
+temperature: 0.3        
+top_p: 0.92           
+max_output_tokens: 2048 
+stop: []              
+
+stream: true          
+highlight: true        
+save: true           
+wrap_code: false       
+
+rag_top_k: 5           
+rag_reranker_model: null 
+compress_threshold: 6000 
