@@ -70,7 +70,7 @@ Powered by **aichat**, **Ollama**, **RAG**, and curated red team repositories li
 ### Option 1: PKGBUILD (Recommended for Athena OS)
 
 ```bash
-git clone https://github.com/toxy4ny/nikki-ai.git
+git clone https://github.com/toxy4ny/nikki-ai-cli-assistent.git
 cd nikki-ai
 makepkg -si
 ```
